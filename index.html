@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Transfer (Node + MongoDB)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>💸 Money Transfer Demo</h1>
+
+  <button id="setupBtn">🔁 Create Sample Users</button>
+
+  <section id="balances">
+    <h2>Account Balances</h2>
+    <div id="userList">Loading...</div>
+  </section>
+
+  <section id="transfer">
+    <h2>Transfer Money</h2>
+    <input type="text" id="from" placeholder="From (e.g., Alice)">
+    <input type="text" id="to" placeholder="To (e.g., Bob)">
+    <input type="number" id="amount" placeholder="Amount">
+    <button id="transferBtn">Send Money</button>
+  </section>
+
+  <pre id="output"></pre>
+
+  <script src="app.js"></script>
+</body>
+</html>
